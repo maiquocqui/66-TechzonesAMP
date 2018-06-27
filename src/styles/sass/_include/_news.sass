@@ -1,0 +1,73 @@
+.page-title
+	+fs(16rem)
+	font-weight: 700
+	text-transform: uppercase
+	color: $main
+	padding: 10px 0
+.small-title
+	+fs(16rem)
+	font-weight: 600
+	color: $main
+	margin-bottom: 10px
+.news-col
+	margin-bottom: 10px
+	box-shadow: 0 3px 3px color-rgba($black,0.1)
+	background: $white
+	+bor-rad(3px)
+	overflow: hidden
+	.news-img 
+		display: block
+	figcaption
+		padding: 10px
+	.news-name
+		font-weight: 700
+		+fs(13rem)
+		line-height: 1.3
+		margin-bottom: 3px
+		a 
+			color: $main
+	time 
+		+fs(11rem)
+		color: darken($white,40%)
+		display: block
+		font-weight: 600
+	.news-des
+		+fs(12rem)
+		color: darken($white,60%)
+.news-info
+	margin-top: -15px
+	time 
+		+fs(13rem)
+		color: darken($white,60%)
+		display: block
+		margin-bottom: 10px
+.other-news
+	ul 
+		border-top: 1px dashed darken($white,10%)
+		li 
+			border-bottom: 1px dashed darken($white,10%)
+			padding: 10px 0
+		time 
+			display: block
+			+fs(13rem)
+			color: darken($white,40%)
+		a 
+			color: $yellow
+.news-detail
+	margin-bottom: 10px
+	box-shadow: 0 1px 3px color-rgba($black,0.1)
+	background: $white
+	.page-title
+		margin-bottom: 5px
+	time
+		font-weight: 600
+		color: darken($white,40%)
+.other-news
+	margin-bottom: 10px
+	box-shadow: 0 1px 3px color-rgba($black,0.1)
+	background: $white
+	.news-list
+	.news-col
+		+bor-rad(0)
+		margin-bottom: 0
+		box-shadow: none

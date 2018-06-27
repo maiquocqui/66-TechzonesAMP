@@ -1,0 +1,25 @@
+.banner-wrap
+.home-banner
+	+pos(rel,null)
+	padding: 40px 0
+	.banner-img
+		+pos(abs, 0 null 0 0)
+		right: 0
+		img 
+			width: 100%
+			height: 100%
+			object-fit: cover
+			filter: brightness(80%)
+	.banner-caption
+		text-align: center
+		+pos(rel,null)
+		z-index: 1
+		color: $white
+		text-shadow: 1px 1px 3px color-rgba($black,0.5)
+		h1 
+			text-transform: uppercase
+			font-weight: 700
+			+fs(24rem)
+			margin-bottom: 15px
+		p 
+			+fs(15rem)

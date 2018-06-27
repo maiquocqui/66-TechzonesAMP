@@ -1,0 +1,30 @@
+.contact-page
+	.contact-info
+		ul 
+			li 
+				+pos(rel,null)
+				padding-left: 25px
+				.fa 
+					+pos(abs, 5px null null 0)
+					color: $yellow
+					width: 20px
+					text-align: center
+				a 
+					color: $main
+.contact-form
+	margin-bottom: 15px
+	.form-group
+		margin-bottom: 10px
+		label 
+			+fs(14rem)
+		input, textarea
+			width: 100%
+			padding: 10px 15px
+			border: 1px solid darken($white,15%)
+			+bor-rad(5px)
+	input[type="submit"]
+		background: $yellow
+		color: $white
+		padding: 10px 15px
+		border: none
+		text-transform: uppercase

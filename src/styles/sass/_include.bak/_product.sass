@@ -1,0 +1,217 @@
+
+.product-col
+	border-right: 1px solid darken($white,10%)
+	border-bottom: 1px solid darken($white,10%)
+	figure 
+		.product-img 
+			display: block
+		figcaption
+			padding: 10px 15px
+			text-align: center
+			.product-name
+				font-weight: 600
+				+fs(14rem)
+				a
+					display: block
+					color: $main
+			.product-price
+				.new
+					+fs(14rem)
+					font-weight: 700
+					color: $red
+
+
+.product-detail
+	margin-bottom: 10px
+	box-shadow: 0 3px 3px color-rgba($black,0.1)
+	background: $white
+	.product-slide
+		padding: 20px 0
+	.product-info
+		padding: 10px 15px
+		border-bottom: 1px solid darken($white,10%)
+		h1.product-name
+			+fs(18rem)
+			font-weight: 700
+		.product-brand
+			+fs(13rem)
+			line-height: 1
+			a 
+				margin-left: 5px
+				color: $blue
+				font-weight: 600
+	.product-option
+		padding: 10px 15px
+		border-bottom: 1px solid darken($white,10%)
+		.label
+			+fs(14rem)
+			width: 100%
+			font-weight: 600
+			margin-bottom: 5px
+			line-height: 1
+		.option
+			+flexbox
+			width: 100%
+			flex-wrap: wrap
+			a 
+				display: block
+				width: 30px
+				height: 30px
+				border: 1px solid darken($white,10%)
+				+ a 
+					margin-left: 10px
+				&.active
+					border-color: $blue
+	.product-price, .product-status
+		width: 50%
+		padding: 5px 0
+		text-align: center
+		+flexbox
+		flex-wrap: wrap
+		justify-content: center
+		align-items: center
+		align-content: center
+		border-bottom: 1px solid darken($white,10%)
+	.product-price
+		.new, .old
+			width: 100%
+		.new
+			font-weight: 700
+			color: $red
+			+fs(16rem)
+		.old
+			+fs(12rem)
+			font-weight: 600
+			line-height: 1
+			text-decoration: line-through
+			color: darken($white,40%)
+	.product-status
+		border-left: 1px solid darken($white,10%)
+		// +fs(16rem)
+		+fs(14rem)
+		.on 
+			color: $green
+			font-weight: 600
+	.product-description
+		padding: 10px 15px 0
+	.productbtn-wrap
+		+pos(fix, null 0 0 0)
+		padding: 10px
+		z-index: 10
+		background: $white
+		.btn-buy
+			display: block
+			color: $white
+			background: $red
+			+bor-rad(3px)
+			line-height: 40px
+			text-align: center
+			text-transform: uppercase
+			font-weight: 600
+			box-shadow: 0 3px 3px color-rgba($black,0.2)
+			&:hover
+				background: darken($red,10%)
+.product-content
+	margin-bottom: 10px
+	box-shadow: 0 3px 3px color-rgba($black,0.1)
+	background: $white
+	.title
+		padding: 7px 15px
+		+fs(14rem)
+		font-weight: 700
+		// background: darken($white,2%)
+		border-bottom: 1px solid darken($white,10%)
+	.content
+		padding: 10px 15px
+	.description-content
+		padding: 10px 15px
+		.content
+			height: 200px
+			overflow: hidden
+			+pos(rel,null)
+			padding: 0
+			margin-bottom: 10px
+			&:after
+				content: ''
+				display: block
+				background: linear-gradient(color-rgba($white,0),$white)
+				+pos(abs, null 0 0 0)
+				height: 20px
+		.btn-showmore
+			background: lighten($blue,50%)
+			text-align: center
+			padding: 7px 0
+			+bor-rad(5px)
+			+fs(13rem)
+			color: $blue
+			border: 1px dashed lighten($blue,20%)
+			.fa 
+				margin-right: 5px
+		.fly-content
+			// +pos(fix, 0 null 0 0)
+			// right: 0
+			// z-index: 1000
+			background: $white
+			.btn-showless
+				+fs(14rem)
+				background: darken($white,3%)
+				border-bottom: 1px solid darken($white,10%)
+				padding: 10px 15px
+				font-weight: 600
+			.content
+				padding: 10px 15px
+				height: unset
+				// height: calc(100vh - 42px)
+				// overflow: auto
+
+
+.product-box
+	.title
+		background: lighten($cyan,50%)
+		color: $cyan
+		border-color: lighten($cyan,40%)
+.product-gift
+	.title
+		background: lighten($pink,40%)
+		color: $pink
+		border-color: lighten($pink,35%)
+.product-support
+	.title
+		color: $red
+		text-align: center
+		a 
+			text-decoration: underline
+			color: $red
+	.content
+		ul 
+			padding: 0
+			li 
+				margin-bottom: 5px
+				padding-left: 20px
+				+pos(rel,null)
+				&:before
+					content: '\f058'
+					font-family: 'fontawesome'
+					+fs(12rem)
+					color: lighten($green,5%)
+					background: none
+					width: unset
+					height: unset
+					top: 0
+					left: 0
+
+.product-other
+	white-space: nowrap
+	overflow: auto
+	.product-col
+		display: inline-block
+		width: 40%
+		margin-left: -3px
+		figure 
+			// .product-img 
+			figcaption
+				.product-name
+					+fs(13rem)
+				.product-price
+					.new
+						+fs(13rem)

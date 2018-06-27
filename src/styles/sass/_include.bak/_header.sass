@@ -1,0 +1,105 @@
+// HEADER CSS
+body
+	padding-top: 80px
+header
+	background: $blue
+	+pos(fix, 0 0 null 0)
+	z-index: 100
+	box-shadow: 0 3px 3px color-rgba($black,0.1)
+	// &:after
+		// content: ''
+		// display: block
+		// height: 3px
+		// background: linear-gradient(to right, $blue, $cyan)
+		// +pos(abs, null 0 0 0)
+	.btn-showmenu
+		color: $white
+		float: left
+		line-height: 30px
+		padding: 10px 0
+		text-transform: uppercase
+		padding-right: 15px
+		.fa 
+			+fs(18rem)
+			margin-left: 5px
+	.sitelogo
+		float: left
+		a 
+			display: block
+			padding: 10px 0
+		img 
+			// filter: grayscale(100%) brightness(2000%)
+	.viewsite
+		// float: right
+		display: block
+		background: $white
+		clear: both
+		+fs(14rem)
+		color: darken($white,60%)
+		line-height: 30px
+		text-align: center
+		&:after
+			content: '\f105'
+			font-family: 'fontawesome'
+			margin-left: 5px
+.menu
+	background: $white
+	width: 280px
+	.btn-closemenu
+		+pos(abs, 5px 5px null null)
+		color: $white
+		// background: color-rgba($white,0.3)
+		// background: $white
+		+bor-rad(50px)
+		width: 26px
+		height: 26px
+		line-height: 26px
+		text-align: center
+	.menulogo
+		text-align: center
+		// background: darken($white,3%)
+		background: $blue
+		padding: 30px 0
+	.menu-link
+		> li 
+			+pos(rel,null)
+			// border-bottom: 1px solid darken($white,5%)
+			> a, .sub-title 
+				display: block
+				color: darken($white,60%)
+				padding: 10px 15px
+				+fs(14rem)
+				font-weight: 600
+				background: none
+				border: none
+				text-transform: uppercase
+			.sub
+				background: darken($white,5%)
+				ul 
+					li 
+						a 
+							display: block
+							+fs(13rem)
+							padding: 7px 15px
+							color: $main
+			&.hassub
+				&:after
+					content: '\f107'
+					font-family: 'fontawesome'
+					+fs(18rem)
+					+pos(abs, 7px 15px null null)
+					color: darken($white,40%)
+			&.active
+				> a, .sub-title
+					color: $blue
+	.social
+		+flexbox
+		justify-content: center
+		padding: 15px
+		border-top: 1px solid darken($white,10%)
+		a 
+			display: block
+			text-align: center
+			color: $main
+			width: 50px
+			+fs(18rem)

@@ -1,0 +1,66 @@
+.home-category
+	margin-bottom: 10px
+	box-shadow: 0 1px 3px color-rgba($black,0.1)
+	background: $white
+	.tab
+		background: $white
+		color: $blue
+		text-transform: uppercase
+		padding: 10px 15px
+		+fs(13rem)
+		font-weight: 600
+		border: none
+		&:after
+			content: '\f107'
+			font-family: 'fontawesome'
+			+pos(abs, 50% 15px null null)
+			+transform(translateY(-50%))
+	.category-link
+		border-top: 1px solid darken($white,10%)
+		ul 
+			li
+				a
+					+fs(13rem)
+					display: block
+					color: $main
+					font-weight: 600
+					padding: 7px 15px
+					+pos(rel,null)
+					&:after
+						content: '\f105'
+						font-family: 'fontawesome'
+						+pos(abs,50% 15px null null)
+						+transform(translateY(-50%))
+
+.home-product
+	margin-bottom: 10px
+	box-shadow: 0 1px 3px color-rgba($black,0.1)
+	background: $white
+	.product-list
+		.row, .col-xs-6
+			margin: 0
+			padding: 0
+.home-title
+	padding: 10px 15px
+	+pos(rel,null)
+	border-bottom: 1px solid darken($white,10%)
+	.title
+		+fs(14rem)
+		font-weight: 700
+		text-transform: uppercase
+		color: $main
+		float: left
+	.viewmore
+		+fs(13rem)
+		padding: 1px 0
+		font-weight: 600
+		float: right
+		color: $blue
+		text-transform: uppercase
+		&:after
+			content: '\f105'
+			font-family: 'fontawesome'
+			margin-left: 5px
+
+.brand-list
+	.brand-col
